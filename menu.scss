@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$textColor: white;
+$hoverColor: orange;
+$headerColor: rgb(158, 64, 64);
+$bodyColor: #333;
+$navColor: rgb(33, 33, 54);
+$borderSettings: 0.1rem solid grey;
+$containerColor: rgb(255, 234, 176);
+$containerBorder: 0.1rem solid #333;
+$buttonColor: red;
+$buttonBorder: 0.4rem solid #333;
+
+@media only screen and (min-width: 280px) and (max-width: 540px){
+    .wrapper{
+        width: 100%;
+    }
+
+    body{
+        color: $bodyColor;
+        overflow-y: scroll;
+        font-family: arial;
+    }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $headerColor;
+
+}
+
+.header{
+    text-align: center;
+    font-size: 20px;
+    color: $textColor;
+    padding: 0.8rem 0;
+}
+
+.navbar{
+    width: 100%;
+    background-color: $navColor;
+
+}
+
+.bottomnav{
+    list-style-type: none;
+}
+
+.bottomnav li {
+    border-bottom: $borderSettings;
+}
+
+.bottomnav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: $textColor;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.bottomnav a:hover{
+    color: $hoverColor;
+    font-size: 22px;
+    outline: none;
+}
+
+.bottomnav a:active{
+    color: $hoverColor;
+    font-size: 22px;
+}
+
+/* moving to containers */
+
+.container2{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.78rem;
+    background-color: $containerColor;
+    border: $containerBorder;
+    width: 93%;
+}
+
+.info1{
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+.info1 h1{
+   font-size: 1.5rem;
+   padding-bottom: 1rem; 
+}
+
+.info1 p{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.info1 h2{
+    width: 27%;
+    height: 2.5rem;
+    background-color: $buttonColor;
+    border: $buttonBorder;
+    color: $textColor;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.salad{
+    padding: 0.8rem;
+}
+
+.salad img{
+    width: 100%;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.78rem;
+    background-color: $containerColor;
+    border: $containerBorder;
+    width: 93%;
+}
+
+.info2{
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+.info2 h1{
+   font-size: 1.5rem;
+   padding-bottom: 1rem; 
+}
+
+.info2 p{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.info2 h2{
+    width: 27%;
+    height: 2.5rem;
+    background-color: $buttonColor;
+    border: $buttonBorder;
+    color: $textColor;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.pizza{
+    padding: 0.8rem;
+}
+
+.pizza img {
+    width: 100%;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.78rem;
+    background-color: $containerColor;
+    border: $containerBorder;
+    width: 93%;
+}
+
+.info3{
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+.info3 h1{
+   font-size: 1.5rem;
+   padding-bottom: 1rem; 
+}
+
+.info3 p{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.info3 h2{
+    width: 30%;
+    height: 2.5rem;
+    background-color: $buttonColor;
+    border: $buttonBorder;
+    color: $textColor;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.burger{
+    padding: 0.8rem;
+}
+
+.burger img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color:$navColor;
+    height: 25px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: $textColor;
+    padding: 0.35rem;
+}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    body {
+        color: $bodyColor;
+        font-family: arial;
+        overflow-y: scroll;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $headerColor;
+    
+    }
+    
+    .header{
+        text-align: left;
+        font-size: 15px;
+        color:$textColor;
+        padding: 1rem 2rem;
+    }
+    
+    .navbar{
+        padding: 0.6rem 0.3rem;
+        height: 2.5rem;
+        background-color: $navColor;
+    
+    }
+    
+    .bottomnav{
+        list-style-type: none;
+    }
+    
+    .bottomnav li {
+        display: inline-block;
+        padding: 0 0.7rem;
+    
+    }
+    
+    .bottomnav a {
+        text-decoration: none;
+        color: $textColor;
+        font-size: 18px;
+    }
+    
+    .bottomnav a:hover{
+        color: $hoverColor;
+        font-size: 20px;
+        outline: none;
+    }
+    
+    .bottomnav a:active{
+        color: $hoverColor;
+        font-size: 20px;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1.2rem;
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 95%;
+    }
+    
+    .info1{
+      padding: 1rem 1.5rem;
+      line-height: 1.8rem;
+    }
+    
+    .info1 h1{
+       font-size: 2rem;
+       padding-bottom: 1.5rem; 
+    }
+    
+    .info1 p{
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .info1 h2{
+        width: 14%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        text-align: center;
+        padding: 0.05rem;
+        font-size: 1.2rem;
+    }
+    
+    .salad{
+        padding: 1rem;
+    }
+
+    .salad img{
+        width: 100%;
+        
+    }
+    
+    .container3{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1.2rem;      
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 95%;
+    }
+    
+    .info2{
+      padding: 1rem 1.5rem;
+      line-height: 1.8rem;
+    }
+    
+    .info2 h1{
+       font-size: 2rem;
+       padding-bottom: 1.5rem; 
+    }
+    
+    .info2 p{
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .info2 h2{
+        width: 14%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        text-align: center;
+        padding: 0.05rem;
+        font-size: 1.2rem;
+    }
+    
+    .pizza{
+        padding: 1rem;
+    }
+
+    .pizza img {
+        width: 100%;
+    }
+    
+    .container4{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1.2rem;
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 95%;
+    }
+    
+    .info3{
+      padding: 1rem 1.5rem;
+      line-height: 1.8rem;
+    }
+    
+    .info3 h1{
+       font-size: 2rem;
+       padding-bottom: 1.5rem; 
+    }
+    
+    .info3 p{
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .info3 h2{
+        width: 16%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        text-align: center;
+        padding: 0.05rem;
+        font-size: 1.2rem;
+    }
+    
+    .burger{
+        padding: 1rem;
+    }
+
+    .burger img{
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color:$navColor;
+        height: 25px;
+    }
+    
+    .footer p {
+        font-size: 0.8rem;
+        color: $textColor;
+        padding: 0.35rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    body {
+        color: $bodyColor;
+        font-family: arial;
+        overflow-y: scroll;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $headerColor;
+    
+    }
+    
+    .header{
+        text-align: left;
+        font-size: 15px;
+        color: $textColor;
+        padding: 1rem 2rem;
+    }
+    
+    .navbar{
+        padding: 0.6rem 0.3rem;
+        height: 2.5rem;
+        background-color: $navColor;
+    
+    }
+    
+    .bottomnav{
+        list-style-type: none;
+    }
+    
+    .bottomnav li {
+        display: inline-block;
+        padding: 0 0.7rem;
+    
+    }
+    
+    .bottomnav a {
+        text-decoration: none;
+        color: $textColor;
+        font-size: 18px;
+    }
+    
+    .bottomnav a:hover{
+        color: $hoverColor;
+        font-size: 20px;
+        outline: none;
+    }
+    
+    .bottomnav a:active{
+        color: $hoverColor;
+        font-size: 20px;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 97%;
+    }
+    
+    .info1{
+    width: 80%;
+      padding: 1rem;
+      line-height: 1.7rem;
+    }
+    
+    .info1 h1{
+       font-size: 1.5rem;
+       padding-bottom: 1rem; 
+    }
+    
+    .info1 p{
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .info1 h2{
+        width: 12%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        padding: 0.05rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .salad{
+        width: 50%;
+        padding: 0.7rem;
+    }
+
+    .salad img{
+        width: 100%;
+    }
+    
+    .container3{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 97%;
+    }
+    
+    .info2{
+        width: 80%;
+        padding: 1rem;
+        line-height: 1.7rem;
+      }
+      
+      .info2 h1{
+         font-size: 1.5rem;
+         padding-bottom: 1rem; 
+      }
+      
+      .info2 p{
+          font-size: 1.1rem;
+          padding-bottom: 1rem;
+      }
+    
+    .info2 h2{
+        width: 12%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        text-align: center;
+        padding: 0.05rem;
+        font-size: 1.2rem;
+    }
+    
+    .pizza{
+        width: 50%;
+        padding: 0.7rem;
+    }
+
+    .pizza img {
+        width: 100%;
+    }
+    
+    .container4{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: $containerColor;
+        border: $containerBorder;
+        width: 97%;
+    }
+    
+    .info3{
+        width: 80%;
+        padding: 1rem;
+        line-height: 1.7rem;
+      }
+      
+      .info3 h1{
+         font-size: 1.5rem;
+         padding-bottom: 1rem; 
+      }
+      
+      .info3 p{
+          font-size: 1.1rem;
+          padding-bottom: 1rem;
+      }
+    
+    .info3 h2{
+        width: 13%;
+        height: 2.5rem;
+        background-color: $buttonColor;
+        border: $buttonBorder;
+        color: $textColor;
+        text-align: center;
+        padding: 0.05rem;
+        font-size: 1.2rem;
+    }
+    
+    .burger{
+        width: 50%;
+        padding: 0.7rem;
+    }
+
+    .burger img{
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color:$navColor;
+        height: 40px;
+    }
+    
+    .footer p {
+        font-size: 0.9rem;
+        color: $textColor;
+        padding: 0.7rem 0;
+    }
+}

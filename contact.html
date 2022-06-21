@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>Restaurant KEA</h1>
+            </div>
+                <div class="navbar">
+                    <div class="bottomnav">
+                    <li><ul><a href="home.html">Home</a></ul></li>
+                    <li><ul><a href="menu.html">Menu</a></ul></li>
+                    <li><ul><a href="contact.html">Contact</a></ul></li>
+                </div>
+            </div>
+        </div> 
+        <div class="container2"> <!--container2 contains the picture of the map and the contact details such as phone number, address etc.-->
+        <div class="map">
+            <img src="imagini/map.jpg" alt="location">
+        </div>
+        <div class="info">
+            <p>Guldbergsgade 29 <br>
+            2200 Copenhagen</p>
+            <li><ul>Phone number: <a href="call">20 82 53 70</a></ul></li>
+            <li><ul>E-mail: <a href="call">info@restaurantkea.dk</a></ul></li>
+            
+        <fieldset>
+         <legend>Contact form</legend>         
+         <form>
+             <label for>Full name</label>
+             <input type="text" id="txtname" name="Fullname"><br>
+             <label for>Phone no.</label>
+             <input type="text" id="txtnumber" name="phonenumber"><br>
+             <label for>E-mail</label>
+             <input type="text" id="txtemail" name=email><br>
+             <label for>Persons</label><br>
+             <input type="text" id="txtperson" name="persons"><br>
+             <label for>Date and Time</label>
+             <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="dd-mm-yyyy" value="3" min="01.01.2021" max="31.12.2030"><br>
+             <label for>Further information</label>
+             <textarea id="txtinfo" name="info"></textarea>
+             <button class="send">Send</button>
+         </form>   
+        </fieldset>
+        </div>
+    </div>
+        <div class="footer">
+            <p>@2021 KEA Development</p>
+        </div>
+    </div>
+</body>
+</html>
