@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 540px) and (max-device-width: 1024px) {
@@ -16,17 +15,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -37,14 +29,13 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 3rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
   }
   .bottomnav li {
-    display: inline-block;
-    /* so the pages' links will be on the same row */
+    display: inline-block; /* so the pages' links will be on the same row */
     padding: 0 0.7rem;
   }
   .bottomnav a {
@@ -65,12 +56,8 @@
     width: 100%;
   }
   .picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 0.7rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -79,23 +66,14 @@
     width: 100%;
   }
   .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 0.8rem;
   }
   .text p {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 25px;
     padding: 1.3rem 1.5rem;
     line-height: 2rem;
@@ -106,20 +84,16 @@
   .text li {
     font-size: 25px;
     padding: 0 2.5rem;
-    color: #9e4040;
+    color: rgb(158, 64, 64);
     line-height: 2.5rem;
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 1rem;
   }
   .quote {
-    background-color: #c4c4c4;
+    background-color: rgb(196, 196, 196);
     width: 80%;
     margin-bottom: 1.5rem;
   }
@@ -134,13 +108,9 @@
     padding: 1rem 4rem 1.2rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 40px;
   }
   .footer p {
@@ -149,12 +119,10 @@
     padding: 0.45rem;
   }
 }
-
 @media only screen and (min-width: 280px) and (max-device-width: 540px) {
   body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    /* the color of the font */
+    color: #333; /* the color of the font */
     overflow-y: scroll;
   }
   .wrapper {
@@ -162,17 +130,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: center;
@@ -182,7 +143,7 @@
   }
   .navbar {
     width: 100%;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -191,12 +152,8 @@
     border-bottom: 0.1rem solid grey;
   }
   .bottomnav a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -217,12 +174,8 @@
     width: 100%;
   }
   .picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 0.7rem;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
@@ -231,26 +184,15 @@
     width: 100%;
   }
   .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 0.5rem;
   }
   .text p {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 18px;
     line-height: 1.5rem;
     padding: 1rem 1.5rem;
@@ -261,22 +203,16 @@
   .text li {
     font-size: 19px;
     padding: 0 2.5rem;
-    color: #9e4040;
-    line-height: 1.7rem;
-    /*to space the objects between them */
+    color: rgb(158, 64, 64);
+    line-height: 1.7rem; /*to space the objects between them */
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 1rem;
-    /* to space the list and the quote */
+    justify-content: center;
+    padding-top: 1rem; /* to space the list and the quote */
   }
   .quote {
-    background-color: #c4c4c4;
+    background-color: rgb(196, 196, 196);
     width: 70%;
     margin-bottom: 1rem;
   }
@@ -291,13 +227,9 @@
     padding: 0.2rem 2rem 0.5rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 25px;
   }
   .footer p {
@@ -306,7 +238,6 @@
     padding: 0.35rem;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -318,17 +249,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -339,7 +263,7 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 2.5rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -363,13 +287,8 @@
     font-size: 20px;
   }
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     width: 100%;
   }
   .picture {
@@ -382,8 +301,7 @@
     padding: 0.5rem;
   }
   .text {
-    width: 50%;
-    /* put width only at p and ul's container, otherwise there's going to be an unwanted space between image and paragraph. */
+    width: 50%; /* put width only at p and ul's container, otherwise there's going to be an unwanted space between image and paragraph. */
     margin-bottom: 1rem;
   }
   .text p {
@@ -400,20 +318,16 @@
   .text li {
     font-size: 21px;
     padding: 0 2rem;
-    color: #9e4040;
+    color: rgb(158, 64, 64);
     line-height: 2rem;
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 2rem;
   }
   .quote {
-    background-color: #c4c4c4;
+    background-color: rgb(196, 196, 196);
     width: 90%;
     margin-bottom: 1.5rem;
   }
@@ -427,13 +341,9 @@
     padding: 0.5rem 6rem 1.2rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 40px;
   }
   .footer p {
@@ -441,5 +351,4 @@
     color: white;
     padding: 0.7rem 0;
   }
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=index.css.map */

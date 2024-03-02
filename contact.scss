@@ -1,9 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 $textColor: white;
 $hoverColor: orange;
@@ -11,535 +10,579 @@ $headerColor: rgb(158, 64, 64);
 $bodyColor: #333;
 $navColor: rgb(33, 33, 54);
 $borderSettings: 0.1rem solid grey;
+$borderSettings2: 0.1rem solid #c9c9c9;
+$error: rgb(199, 42, 42);
+$success: rgb(49, 131, 49);
 
-@media only screen and (min-width: 280px) and (max-width: 540px){
-    
-    .wrapper{
-        width: 100%;
-    }
+@media only screen and (min-width: 280px) and (max-width: 540px) {
+  .wrapper {
+    width: 100%;
+  }
 
-    body{
-        color: $bodyColor;
-        overflow-y: scroll;
-        font-family: arial;
-    }
+  body {
+    color: $bodyColor;
+    overflow-y: scroll;
+    font-family: arial;
+  }
 
-.container {
+  .container {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: $headerColor;
+  }
 
-}
-
-.header{
+  .header {
     text-align: center;
     font-size: 20px;
     color: $textColor;
     padding: 0.8rem 0;
-}
+  }
 
-.navbar{
+  .navbar {
     width: 100%;
     background-color: $navColor;
+  }
 
-}
-
-.bottomnav{
+  .bottomnav {
     list-style-type: none;
-}
+  }
 
-.bottomnav li {
+  .bottomnav li {
     border-bottom: 0.1rem solid white;
-}
+  }
 
-.bottomnav a {
+  .bottomnav a {
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: $textColor;
     font-size: 20px;
     line-height: 2rem;
-}
+  }
 
-.bottomnav a:hover{
+  .bottomnav a:hover {
     color: $hoverColor;
     font-size: 22px;
     outline: none;
-}
+  }
 
-.bottomnav a:active{
+  .bottomnav a:active {
     color: $hoverColor;
     font-size: 22px;
-}
+  }
 
-.container2{
+  .container2 {
     width: 100%;
-}
+  }
 
-.map{
+  .map {
     display: flex;
     justify-content: center;
     padding: 0.7rem;
-    
-}
+  }
 
-.map img{
+  .map img {
     width: 100%;
     border: $borderSettings;
     padding: 0.4rem;
-    
-}
+  }
 
-.info{
+  .info {
     list-style-type: none;
     padding-left: 1rem;
     padding-top: 0.5rem;
-}
+  }
 
-.info p{
+  .info p {
     font-size: 1rem;
     padding: 0.5rem 0;
-}
+  }
 
-.info li{
+  .info li {
     font-size: 1rem;
     line-height: 2.8rem;
-}
+  }
 
-.info a {
+  .info a {
     text-decoration: none;
-}
+  }
 
-legend{
+  legend {
     font-size: 1rem;
-}
+  }
 
-form{
-    display: flex;
-    flex-direction: column;
+  .form {
     line-height: 1.5rem;
     padding: 1.5rem;
-    
-}
+  }
 
-fieldset {
+  fieldset {
     width: 90%;
     border: $borderSettings;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     margin-left: 0.45rem;
-    
-}
+  }
+  .form-control {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
 
-#txtname{
-    width: 100%;
-    height: 1.3rem;
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: $borderSettings2;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .form-control input:focus {
+    outline: 0;
     border: $borderSettings;
-}
+  }
 
-#txtnumber{
-    width: 100%;
-    height: 1.3rem;
-    border: $borderSettings;
-}
+  .form-control.success input {
+    border-color: $success;
+  }
 
-#txtemail{
-     width: 100%;
-     height: 1.3rem;
-     border: $borderSettings;
-}
+  .form-control.error input {
+    border-color: $error;
+  }
 
-#txtperson{
-    width: 15%;
-    height: 1.3rem;
-    border: $borderSettings;
-}
+  .form-control.success textarea {
+    border-color: $success;
+  }
 
-#dateandtime{
-    width: 100%;
-    height: 1.3rem;
-    border: $borderSettings;
-}
+  .form-control.error textarea {
+    border-color: $error;
+  }
 
-#txtinfo{
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 7rem;
-    border: $borderSettings;
-}
+  .form-control small {
+    color: $error;
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
 
-.send{
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .error {
+    margin: 1.5rem 0;
+  }
+
+  .send {
     width: 20%;
     height: 2rem;
     font-size: 1rem;
-}
+    margin-top: 1rem;
+  }
 
-.footer {
+  .footer {
     display: flex;
     justify-content: center;
     background-color: $navColor;
     height: 25px;
-}
+  }
 
-.footer p {
+  .footer p {
     font-size: 0.8rem;
     color: $textColor;
     padding: 0.35rem;
-}
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 1024px) {
-    .wrapper {
-        width: 100%;
-    }
+  .wrapper {
+    width: 100%;
+  }
 
-    body {
-        color: $bodyColor;
-        font-family: arial;
-        overflow-y: scroll;
-    }
+  body {
+    color: $bodyColor;
+    font-family: arial;
+    overflow-y: scroll;
+  }
 
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: $headerColor;
-    
-    }
-    
-    .header{
-        text-align: left;
-        font-size: 20px;
-        color: $textColor;
-        padding: 1rem 2rem;
-    }
-    
-    .navbar{
-        padding: 0.6rem 0.3rem;
-        height: 3rem;
-        background-color: $navColor;
-    
-    }
-    
-    .bottomnav{
-        list-style-type: none;
-    }
-    
-    .bottomnav li {
-        display: inline-block;
-        padding: 0 0.7rem;
-    
-    }
-    
-    .bottomnav a {
-        text-decoration: none;
-        color: $textColor;
-        font-size: 25px;
-    }
-    
-    .bottomnav a:hover{
-        color: $hoverColor;
-        font-size: 27px;
-        outline: none;
-    }
-    
-    .bottomnav a:active{
-        color: $hoverColor;
-        font-size: 27px;
-    }
-    .container2{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .map{
-        padding: 1rem;
-        
-    }
-    
-    .map img{
-        width: 100%;
-        border: $borderSettings;
-        padding: 0.4rem;
-        
-    }
-    
-    .info{
-        list-style-type: none;
-        padding-left: 1rem;
-        padding-top: 0.3rem;
-    }
-    
-    .info p{
-        font-size: 1.3rem;
-        padding: 0.7rem 0;
-    }
-    
-    .info li{
-        font-size: 1.3rem;
-        line-height: 3rem;
-    }
-    
-    .info a {
-        text-decoration: none;
-    }
-    
-    legend{
-        font-size: 1rem;
-    }
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        line-height: 1.7rem;
-        padding: 1rem;
-        
-    }
-    
-    fieldset {
-        width: 95%;
-        border: $borderSettings;
-        margin-bottom: 1.5rem;
-        margin-top: 1.7rem;
-        margin-left: 0.5rem;
-    }
-    
-    #txtname{
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
-    }
-    
-    #txtnumber{
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
-    }
-    
-    #txtemail{
-         width: 100%;
-         height: 1.3rem;
-         border: $borderSettings;
-    }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: $headerColor;
+  }
 
-    #txtperson{
-        width: 10%;
-        height: 1.3rem;
-        border: $borderSettings;
-    }
-    
-    #dateandtime{
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
+  .header {
+    text-align: left;
+    font-size: 20px;
+    color: $textColor;
+    padding: 1rem 2rem;
+  }
 
-    }
+  .navbar {
+    padding: 0.6rem 0.3rem;
+    height: 3rem;
+    background-color: $navColor;
+  }
 
-    #txtinfo{
-        margin-bottom: 1rem;
-        width: 100%;
-        height: 8rem;
-        border: $borderSettings;
-    }
-    
-    .send{
-        width: 20%;
-        height: 2rem;
-        font-size: 1rem;
-    }
-    
-    .footer {
-        display: flex;
-        justify-content: center;
-        background-color: $navColor;
-        height: 40px;
-    }
-    
-    .footer p{
-        font-size: 1.3rem;
-        color: $textColor;
-        padding: 0.45rem;
-    }
+  .bottomnav {
+    list-style-type: none;
+  }
+
+  .bottomnav li {
+    display: inline-block;
+    padding: 0 0.7rem;
+  }
+
+  .bottomnav a {
+    text-decoration: none;
+    color: $textColor;
+    font-size: 25px;
+  }
+
+  .bottomnav a:hover {
+    color: $hoverColor;
+    font-size: 27px;
+    outline: none;
+  }
+
+  .bottomnav a:active {
+    color: $hoverColor;
+    font-size: 27px;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .map {
+    padding: 1rem;
+  }
+
+  .map img {
+    width: 100%;
+    border: $borderSettings;
+    padding: 0.4rem;
+  }
+
+  .info {
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+  }
+
+  .info p {
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+  }
+
+  .info li {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  .info a {
+    text-decoration: none;
+  }
+
+  legend {
+    font-size: 1rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+    padding: 1rem;
+  }
+
+  fieldset {
+    width: 95%;
+    border: $borderSettings;
+    margin-bottom: 1.5rem;
+    margin-top: 1.7rem;
+    margin-left: 0.5rem;
+  }
+
+  .form-control {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: $borderSettings2;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .form-control input:focus {
+    outline: 0;
+    border: $borderSettings;
+  }
+
+  .form-control.success input {
+    border-color: $success;
+  }
+
+  .form-control.error input {
+    border-color: $error;
+  }
+
+  .form-control.success textarea {
+    border-color: $success;
+  }
+
+  .form-control.error textarea {
+    border-color: $error;
+  }
+
+  .form-control small {
+    color: $error;
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .error {
+    margin: 1.5rem 0;
+  }
+
+  .send {
+    margin-bottom: 1rem;
+    width: 20%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: $navColor;
+    height: 40px;
+  }
+
+  .footer p {
+    font-size: 1.3rem;
+    color: $textColor;
+    padding: 0.45rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .wrapper {
-        width: 100%;
-    }
+  .wrapper {
+    width: 100%;
+  }
 
-    body {
-        color: $bodyColor;
-        font-family: arial;
-        overflow-y: scroll;
-    }
+  body {
+    color: $bodyColor;
+    font-family: arial;
+    overflow-y: scroll;
+  }
 
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: $headerColor;
-    
-    }
-    
-    .header{
-        text-align: left;
-        font-size: 15px;
-        color: $textColor;
-        padding: 1rem 2rem;
-    }
-    
-    .navbar{
-        padding: 0.6rem 0.3rem;
-        height: 2.5rem;
-        background-color: $navColor;
-    
-    }
-    
-    .bottomnav{
-        list-style-type: none;
-    }
-    
-    .bottomnav li {
-        display: inline-block;
-        padding: 0 0.7rem;
-    
-    }
-    
-    .bottomnav a {
-        text-decoration: none;
-        color: $textColor;
-        font-size: 18px;
-    }
-    
-    .bottomnav a:hover{
-        color: $hoverColor;
-        font-size: 20px;
-        outline: none;
-    }
-    
-    .bottomnav a:active{
-        color: $hoverColor;
-        font-size: 20px;
-    }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: $headerColor;
+  }
 
-    .container2{
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-    }
-    
-    .map{
-        width: 100%;
-        margin: 1rem;
-        padding-top: 0.2rem;
-        padding-right: 0.5rem;
-    }
-    
-    .map img{
-        width: 100%;
-        border: $borderSettings;
-        padding: 0.5rem;
-        
-    }
-    
-    .info{
-        width: 60%;
-        padding: 1rem;
-        list-style-type: none;
-    }
-    
-    .info p{
-        font-size: 1.1rem;
-        padding-bottom: 0.5rem;
-    }
-    
-    .info li{
-        font-size: 1.1rem;
-        line-height: 2.5rem;
-    }
-    
-    .info a {
-        text-decoration: none;
-    }
-    
-    legend{
-        font-size: 1rem;
-    }
-    
-    form{
-        line-height: 2rem;
-        padding: 1rem;
-        
-    }
-    
-    fieldset {
-        width: 100%;
-        border: $borderSettings;
-        margin-bottom: 0.5rem;
-        margin-top: 1.5rem;
-    }
-    
-    #txtname{
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
-        
-    }
-    
-    #txtnumber{
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
-    }
-    
-    #txtemail{
-         width: 100%;
-         height: 1.3rem;
-         border: $borderSettings;
-    }
+  .header {
+    text-align: left;
+    font-size: 15px;
+    color: $textColor;
+    padding: 1rem 2rem;
+  }
 
-    #txtperson{
-        width: 14%;
-        height: 1.3rem;
-        border: $borderSettings;
-    }
+  .navbar {
+    padding: 0.6rem 0.3rem;
+    height: 2.5rem;
+    background-color: $navColor;
+  }
 
-    #dateandtime {
+  .bottomnav {
+    list-style-type: none;
+  }
 
-        width: 100%;
-        height: 1.3rem;
-        border: $borderSettings;
+  .bottomnav li {
+    display: inline-block;
+    padding: 0 0.7rem;
+  }
 
-    }
-    
-    #txtinfo{
-        margin-bottom: 1rem;
-        width: 100%;
-        height: 8rem;
-        border: $borderSettings;
-    }
-    
-    .send{
-        width: 25%;
-        height: 2rem;
-        font-size: 1rem;
-    }
-    
-    .footer {
-        display: flex;
-        justify-content: center;
-        background-color: $navColor;
-        height: 40px;
-    }
-    
-    .footer p {
-        font-size: 0.9rem;
-        color: $textColor;
-        padding: 0.7rem 0;
-    }
+  .bottomnav a {
+    text-decoration: none;
+    color: $textColor;
+    font-size: 18px;
+  }
+
+  .bottomnav a:hover {
+    color: $hoverColor;
+    font-size: 20px;
+    outline: none;
+  }
+
+  .bottomnav a:active {
+    color: $hoverColor;
+    font-size: 20px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+    margin: 1rem;
+    padding-top: 0.2rem;
+    padding-right: 0.5rem;
+  }
+
+  .map img {
+    width: 100%;
+    border: $borderSettings;
+    padding: 0.5rem;
+  }
+
+  .info {
+    width: 60%;
+    padding: 1rem;
+    list-style-type: none;
+  }
+
+  .info p {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .info li {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+  }
+
+  .info a {
+    text-decoration: none;
+  }
+
+  legend {
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+  }
+
+  .form {
+    line-height: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  fieldset {
+    width: 100%;
+    border: $borderSettings;
+    margin-top: 0.5rem;
+  }
+
+  .form-control {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: $borderSettings2;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .form-control input:focus {
+    outline: 0;
+    border: $borderSettings;
+  }
+
+  .form-control.success input {
+    border-color: $success;
+  }
+
+  .form-control.error input {
+    border-color: $error;
+  }
+
+  .form-control.success textarea {
+    border-color: $success;
+  }
+
+  .form-control.error textarea {
+    border-color: $error;
+  }
+
+  .form-control small {
+    color: $error;
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .error {
+    margin: 1.5rem 0;
+  }
+
+  .send {
+    margin-bottom: 1rem;
+    width: 25%;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: $navColor;
+    height: 40px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    color: $textColor;
+    padding: 0.7rem 0;
+  }
 }

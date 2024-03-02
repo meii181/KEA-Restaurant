@@ -33,27 +33,52 @@
             
         <fieldset>
          <legend>Contact form</legend>         
-         <form>
-             <label for>Full name</label>
-             <input type="text" id="txtname" name="Fullname"><br>
-             <label for>Phone no.</label>
-             <input type="text" id="txtnumber" name="phonenumber"><br>
-             <label for>E-mail</label>
-             <input type="text" id="txtemail" name=email><br>
-             <label for>Persons</label><br>
-             <input type="text" id="txtperson" name="persons"><br>
-             <label for>Date and Time</label>
-             <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="dd-mm-yyyy" value="3" min="01.01.2021" max="31.12.2030"><br>
-             <label for>Further information</label>
+         <form class="form" id="form" method="POST" action="/contact.html" onSubmit="alert('Thank you for submitting this form!')">
+
+            <div class="form-control">
+             <label for="txtname">Full name</label>
+             <input type="text" id="txtname">
+             <small>Error Message</small>
+             </div>
+
+             <div class="form-control">
+             <label for="txtnumber">Phone no.</label>
+             <input type="text" id="txtnumber">
+             <small>Error</small>
+            </div>
+
+            <div class="form-control">
+             <label for="txtemail">E-mail</label>
+             <input type="text" id="txtemail">
+             <small>Error</small>
+            </div>
+
+            <div class="form-control">
+             <label for="txtperson">Persons</label>
+             <input type="text" id="txtperson">
+             <small>Error</small>
+            </div>
+
+            <div class="form-control">
+             <label for="dateandtime">Date and Time</label>
+             <input type="datetime-local" id="dateandtime" placeholder="dd-mm-yyyy" value="3" min="01.01.2021" max="31.12.2030">
+             <small>Error</small>
+            </div>
+
+            <div class="form-control">
+             <label for="txtinfo">Further information</label>
              <textarea id="txtinfo" name="info"></textarea>
-             <button class="send">Send</button>
+             <small>Error</small>
+            </div>
+             <button type="submit" class="send">Send</button>
          </form>   
         </fieldset>
         </div>
     </div>
-        <div class="footer">
+        <div class="footer"> 
             <p>@2021 KEA Development</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

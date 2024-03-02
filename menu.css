@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
@@ -16,17 +15,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: center;
@@ -36,7 +28,7 @@
   }
   .navbar {
     width: 100%;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -45,12 +37,8 @@
     border-bottom: 0.1rem solid grey;
   }
   .bottomnav a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -67,15 +55,10 @@
   }
   /* moving to containers */
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0.78rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 93%;
   }
@@ -108,15 +91,10 @@
     width: 100%;
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0.78rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 93%;
   }
@@ -149,15 +127,10 @@
     width: 100%;
   }
   .container4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0.78rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 93%;
   }
@@ -190,13 +163,9 @@
     width: 100%;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 25px;
   }
   .footer p {
@@ -205,7 +174,6 @@
     padding: 0.35rem;
   }
 }
-
 @media only screen and (min-width: 540px) and (max-width: 1024px) {
   .wrapper {
     width: 100%;
@@ -217,17 +185,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -238,7 +199,7 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 2.5rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -262,15 +223,10 @@
     font-size: 20px;
   }
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 1.2rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 95%;
   }
@@ -303,15 +259,10 @@
     width: 100%;
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 1.2rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 95%;
   }
@@ -344,15 +295,10 @@
     width: 100%;
   }
   .container4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 1.2rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 95%;
   }
@@ -385,13 +331,9 @@
     width: 100%;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 25px;
   }
   .footer p {
@@ -400,7 +342,6 @@
     padding: 0.35rem;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .wrapper {
     width: 100%;
@@ -412,17 +353,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -433,7 +367,7 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 2.5rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -457,15 +391,10 @@
     font-size: 20px;
   }
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin: 1rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 97%;
   }
@@ -500,15 +429,10 @@
     width: 100%;
   }
   .container3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin: 1rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 97%;
   }
@@ -543,15 +467,10 @@
     width: 100%;
   }
   .container4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin: 1rem;
-    background-color: #ffeab0;
+    background-color: rgb(255, 234, 176);
     border: 0.1rem solid #333;
     width: 97%;
   }
@@ -586,13 +505,9 @@
     width: 100%;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 40px;
   }
   .footer p {
@@ -600,5 +515,4 @@
     color: white;
     padding: 0.7rem 0;
   }
-}
-/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */

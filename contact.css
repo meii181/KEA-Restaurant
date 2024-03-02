@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
@@ -16,17 +15,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: center;
@@ -36,7 +28,7 @@
   }
   .navbar {
     width: 100%;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -45,12 +37,8 @@
     border-bottom: 0.1rem solid white;
   }
   .bottomnav a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -69,12 +57,8 @@
     width: 100%;
   }
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .map img {
@@ -101,14 +85,7 @@
   legend {
     font-size: 1rem;
   }
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .form {
     line-height: 1.5rem;
     padding: 1.5rem;
   }
@@ -119,50 +96,63 @@
     margin-top: 1.5rem;
     margin-left: 0.45rem;
   }
-  #txtname {
-    width: 100%;
-    height: 1.3rem;
+  .form-control {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: 0.1rem solid #c9c9c9;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .form-control input:focus {
+    outline: 0;
     border: 0.1rem solid grey;
   }
-  #txtnumber {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success input {
+    border-color: rgb(49, 131, 49);
   }
-  #txtemail {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error input {
+    border-color: rgb(199, 42, 42);
   }
-  #txtperson {
-    width: 15%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success textarea {
+    border-color: rgb(49, 131, 49);
   }
-  #dateandtime {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error textarea {
+    border-color: rgb(199, 42, 42);
   }
-  #txtinfo {
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 7rem;
-    border: 0.1rem solid grey;
+  .form-control small {
+    color: rgb(199, 42, 42);
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+  .form-control.error small {
+    visibility: visible;
+  }
+  .error {
+    margin: 1.5rem 0;
   }
   .send {
     width: 20%;
     height: 2rem;
     font-size: 1rem;
+    margin-top: 1rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 25px;
   }
   .footer p {
@@ -171,7 +161,6 @@
     padding: 0.35rem;
   }
 }
-
 @media only screen and (min-width: 540px) and (max-width: 1024px) {
   .wrapper {
     width: 100%;
@@ -183,17 +172,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -204,7 +186,7 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 3rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -228,13 +210,8 @@
     font-size: 27px;
   }
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .map {
@@ -264,14 +241,9 @@
   legend {
     font-size: 1rem;
   }
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .form {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     line-height: 1.7rem;
     padding: 1rem;
   }
@@ -282,50 +254,63 @@
     margin-top: 1.7rem;
     margin-left: 0.5rem;
   }
-  #txtname {
-    width: 100%;
-    height: 1.3rem;
+  .form-control {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: 0.1rem solid #c9c9c9;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .form-control input:focus {
+    outline: 0;
     border: 0.1rem solid grey;
   }
-  #txtnumber {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success input {
+    border-color: rgb(49, 131, 49);
   }
-  #txtemail {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error input {
+    border-color: rgb(199, 42, 42);
   }
-  #txtperson {
-    width: 10%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success textarea {
+    border-color: rgb(49, 131, 49);
   }
-  #dateandtime {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error textarea {
+    border-color: rgb(199, 42, 42);
   }
-  #txtinfo {
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 8rem;
-    border: 0.1rem solid grey;
+  .form-control small {
+    color: rgb(199, 42, 42);
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+  .form-control.error small {
+    visibility: visible;
+  }
+  .error {
+    margin: 1.5rem 0;
   }
   .send {
+    margin-bottom: 1rem;
     width: 20%;
     height: 2rem;
     font-size: 1rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 40px;
   }
   .footer p {
@@ -334,7 +319,6 @@
     padding: 0.45rem;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .wrapper {
     width: 100%;
@@ -346,17 +330,10 @@
   }
   .container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #9e4040;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(158, 64, 64);
   }
   .header {
     text-align: left;
@@ -367,7 +344,7 @@
   .navbar {
     padding: 0.6rem 0.3rem;
     height: 2.5rem;
-    background-color: #212136;
+    background-color: rgb(33, 33, 54);
   }
   .bottomnav {
     list-style-type: none;
@@ -391,13 +368,8 @@
     font-size: 20px;
   }
   .container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     width: 100%;
   }
   .map {
@@ -428,62 +400,75 @@
     text-decoration: none;
   }
   legend {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
   }
-  form {
+  .form {
     line-height: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
   fieldset {
     width: 100%;
     border: 0.1rem solid grey;
+    margin-top: 0.5rem;
+  }
+  .form-control {
     margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
   }
-  #txtname {
-    width: 100%;
-    height: 1.3rem;
+  .form-control label {
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.5rem;
+  }
+  .form-control input {
+    width: 90%;
+    height: 2rem;
+    border: 0.1rem solid #c9c9c9;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .form-control input:focus {
+    outline: 0;
     border: 0.1rem solid grey;
   }
-  #txtnumber {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success input {
+    border-color: rgb(49, 131, 49);
   }
-  #txtemail {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error input {
+    border-color: rgb(199, 42, 42);
   }
-  #txtperson {
-    width: 14%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.success textarea {
+    border-color: rgb(49, 131, 49);
   }
-  #dateandtime {
-    width: 100%;
-    height: 1.3rem;
-    border: 0.1rem solid grey;
+  .form-control.error textarea {
+    border-color: rgb(199, 42, 42);
   }
-  #txtinfo {
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 8rem;
-    border: 0.1rem solid grey;
+  .form-control small {
+    color: rgb(199, 42, 42);
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+  .form-control.error small {
+    visibility: visible;
+  }
+  .error {
+    margin: 1.5rem 0;
   }
   .send {
+    margin-bottom: 1rem;
     width: 25%;
     height: 2rem;
     font-size: 1rem;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #212136;
+    justify-content: center;
+    background-color: rgb(33, 33, 54);
     height: 40px;
   }
   .footer p {
@@ -491,5 +476,4 @@
     color: white;
     padding: 0.7rem 0;
   }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */
